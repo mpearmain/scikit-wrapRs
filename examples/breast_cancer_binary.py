@@ -14,7 +14,6 @@ test_x = pd.DataFrame(test_x)
 test_y = pd.DataFrame(target_y, columns=['target'])
 ########################################################################################################################
 
-breast_cancer = RangerClassifier(num_trees=50, num_threads=8, seed=42)
+breast_cancer = RangerClassifier(num_trees=500, num_threads=8, seed=42, verbose=True)
 breast_cancer.fit(X, y)
 breast_cancer.predict_proba(test_x)
-

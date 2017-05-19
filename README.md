@@ -20,7 +20,12 @@ $ python setup.py install
 
 More details on usage are in the examples folder.
 
+## Tests
+Providing unit tests for this project is somewhat difficult given its reliance on `R` to actually execute, which a user
+may or may not have install on their machine.  
+
+Instead an example (ideally if the `R` package comes with an example) at the start of the `wrap_r_###` scipt would be 
+helpful for at least regression testing purposes. 
 
 ## WARNINGS
-This is a v0.0.1 cut and will in constant dev in the short term while style and coding designs are figured out
-This will be enhanced and a template example and a more rigorous README produced
+This is a v0.0.1 cut and mainly created to help aid my personal use for Kaggle. 
